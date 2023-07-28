@@ -1,0 +1,110 @@
+/**** Reset ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.pw-meter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    background-color:#ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.267);
+}
+
+h2 {
+    margin: 10px 0 30px;
+    font-size: 20px;
+    color: #111111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-element {
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+input {
+    padding: 8px 30px 8px 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #bbbbbb;
+}
+
+.pw-display-toggle-btn {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+i.fa-eye-slash {
+    display: none;
+}
+
+i.fa-eye {
+    display: block;
+}
+
+.pw-strength {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    background: #f2f2f2;
+    display: none;
+}
+
+.pw-strength span:nth-child(1) {
+    position: relative;
+    font-size: 16px;
+    color: #111111;
+    z-index: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pw-strength span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+/**** Responsive design ****/ 
+
+@media screen and (max-width: 495px) {
+    .pw-meter {
+        width: 95%;
+    }
+}
