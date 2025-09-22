@@ -20,14 +20,14 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 450px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 20px;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.267);
 }
 
-h2 {
+h1 {
     margin: 10px 0 30px;
     font-size: 20px;
     color: #111111;
@@ -101,7 +101,7 @@ i.fa-eye {
     transition: all 0.3s ease-in-out;
 }
 
-/**** Responsive design ****/ 
+/**** Responsive design ****/
 
 @media screen and (max-width: 495px) {
     .pw-meter {
